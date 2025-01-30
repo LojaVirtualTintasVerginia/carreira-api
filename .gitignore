@@ -1,0 +1,4 @@
+node_modules
+.vagas.db
+.vagas.db-journal
+.env
