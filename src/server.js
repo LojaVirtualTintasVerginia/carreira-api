@@ -7,7 +7,10 @@ const PORT = process.env.PORT || 3333;
 
 // Configuração do CORS para permitir requisições do frontend
 app.use(cors({
-  origin: "http://localhost:3000", // Permite chamadas do frontend React
+  origin: [
+    "http://localhost:3000",  // Permite localhost para desenvolvimento
+    "https://carreiras-git-main-lojavirtualtintasverginias-projects.vercel.app/", // Permite Vercel
+  ],
   methods: ["GET", "POST", "PATCH", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }));
