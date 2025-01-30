@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3333;
 app.use(cors({
   origin: [
     "http://localhost:3000",  // Permite localhost para desenvolvimento
-    "https://carreiras-git-main-lojavirtualtintasverginias-projects.vercel.app/", // Permite Vercel
+    "https://carreiras-git-main-lojavirtualtintasverginias-projects.vercel.app", // Permite Vercel
   ],
   methods: ["GET", "POST", "PATCH", "DELETE"],
   allowedHeaders: ["Content-Type"]
